@@ -22,7 +22,6 @@ const Agency = () => {
     gsap.to(imgDivRef.current,{
           scrollTrigger:{
             trigger:imgDivRef.current,
-            markers:true,
             start:'top 30%',
             end:'top -170%',
             scrub:true,
@@ -47,8 +46,8 @@ const Agency = () => {
         <div ref={ imgDivRef } className="h-[41vh] w-[15vw] absolute top-34 left-92 rounded-3xl overflow-hidden">
           <img ref={imgRef} className="bg-cover" src="https://k72.ca/images/teamMembers/Carl_480x640.jpg?w=480&h=640&fit=crop&s=f0a84706bc91a6f505e8ad35f520f0b7"></img>
         </div>
-        <div className="text-white relative">
-           <div className="absolute top-[63vh]">
+        <div className="text-white relative top-[64vh]">
+           <div className="">
                  <div className="font-[font2]">
                 <h1 className="text-[20vw] leading-[17vw] uppercase text-center">Soixan7e <br/>Douze</h1>
              </div>
@@ -57,7 +56,7 @@ const Agency = () => {
             </div>
            </div>
         </div>
-        
+       
   </div>
   )
 }
